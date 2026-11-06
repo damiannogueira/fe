@@ -88,7 +88,7 @@ export const AccordionVolunteer = ({
         headerLeft={headerLeft}
         headerAction={
           canAddEntry && (
-            <AddEntryButton type="button" onClick={() => setIsDialogOpen(true)}>
+            <AddEntryButton type="button" onClick={() => setIsDialogOpen(true)} data-testid="volunteer-row-add-entry">
               <Plus size={20} weight="bold" />
               {t("dashboard.activityLog.addEntry")}
             </AddEntryButton>

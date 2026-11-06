@@ -1,4 +1,4 @@
-import { screenSizeThresholds } from "@/config/constants";
+import { fieldStackingMedia } from "@/components/styled/mixins";
 import styled from "styled-components";
 
 export const AccordionContainer = styled.div`
@@ -18,7 +18,7 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   width: 100%;
 
-  @media (max-width: ${screenSizeThresholds.tablet - 1}px) {
+  @media ${fieldStackingMedia} {
     flex-wrap: wrap;
   }
 `;
@@ -29,7 +29,7 @@ export const HeaderInfoContainer = styled.div`
   align-items: flex-start;
   gap: var(--volunteer-profile-opportunities-accordion-header-info-gap);
 
-  @media (max-width: ${screenSizeThresholds.tablet - 1}px) {
+  @media ${fieldStackingMedia} {
     flex: 1 1 100%;
     min-width: 0;
   }
@@ -41,7 +41,7 @@ export const HeaderInfoAvatarNameContainer = styled.div`
   gap: var(--volunteer-profile-opportunities-accordion-header-avatar-name-gap);
   align-self: stretch;
 
-  @media (max-width: ${screenSizeThresholds.tablet - 1}px) {
+  @media ${fieldStackingMedia} {
     flex-wrap: wrap;
     min-width: 0;
 
@@ -58,7 +58,7 @@ export const HeaderButtonsContainer = styled.div`
   align-items: center;
   gap: var(--volunteer-profile-opportunities-accordion-header-buttons-gap);
 
-  @media (max-width: ${screenSizeThresholds.tablet - 1}px) {
+  @media ${fieldStackingMedia} {
     flex: 1 1 100%;
     flex-wrap: wrap;
     min-width: 0;
